@@ -3,4 +3,4 @@ jdk: oraclejdk8
 install: true
 script:
 - mvn clean package
-- java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.DevLoginExample  https://login.salesforce.com ****** ****** /event/OrgLifecycleNotification
+- java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.BearerTokenExample https://su0503.my.salesforce.com '00DB0000000Ih65!ARMAQF25PLnR3fnzXWFOC90rRvHA75YFh8T_1vFy_Yc3D4DEyoJZrWowRiImJUBnHz_TuHaVRgGA8SbSkt.WS6tXW6L_5Aq3' /event/OrgLifecycleNotification
