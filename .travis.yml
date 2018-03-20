@@ -1,0 +1,6 @@
+language: java
+jdk: oraclejdk8
+install: true
+script:
+- mvn clean package
+- java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.DevLoginExample  https://login.salesforce.com ****** ****** /event/OrgLifecycleNotification
