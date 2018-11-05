@@ -4,6 +4,7 @@ install: true
 script:
 - mvn clean package
 - java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.BearerTokenExample
+  echo $ACCESS_TOKEN
   https://su0503.my.salesforce.com '$ACCESS_TOKEN' /event/OrgLifecycleNotification
 env:
   global:
