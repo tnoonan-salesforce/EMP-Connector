@@ -3,4 +3,8 @@ jdk: oraclejdk8
 install: true
 script:
 - mvn clean package
-- java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.BearerTokenExample https://su0503.my.salesforce.com '$ACCESS_TOKEN' /event/OrgLifecycleNotification
+- java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.BearerTokenExample
+  https://su0503.my.salesforce.com '$ACCESS_TOKEN' /event/OrgLifecycleNotification
+env:
+  global:
+    secure: e61kWso6uMXj2YMinpDo0/8heWhYitJ93A/S1CAbWWq1i2zzHPhRH7S89zVv6MSBCZEvxWb4rAez8bYywTTLBoAE6oh6Eg868eV9wZhNgxHI9+8nQTiCgHI1KmEaAkUMyLTpYfGZrtxwt9eHOuytFpVJt+3UNjjZqHEnlHQ0u+FUJ2pDFOHeFJajXSVoeQxi++OjjT2G44oq0yYvPJrxfWSBkMKupQvw5nTQAMTvk94Dv1MMZ1NRG2e6N9NOMYRiTAvH0Y6fQrr1yX0cB83cYWnGiYrsTUlSZiypO2HBA9EpGRBDzae2Il6kDB5xEL3oF2BtKp9Tz5CZs/V/guoQbNgty/z7cQvNlPHGt70Zmoa50+/IwR50jhtSJ2V/BEpr5lm5xcWbs9ihfzQwVYJR6wdWXdkqe2APozCPOHImIFcfxr2B71IYbMUmA1jHd50L2eykyKqmWmdHGoYasIVupGKjFZ0bPiRF+e/jLnauW2vUO86ornMGiYodETG3nLQ7D1QhnUsYOjVAT9xHW6p91MSeSZAsoj0Seiydyjjr/8j46EuRhGhscnECpU85GqKab5MTv+OydVqRTk7IduiFevJC/oOteEY4kUARV9K92pW/7baLDdIhBZOCUKCt++2V5AGIQ39jZMgBltYa5TOv6Yd/682+ROud5BZhc5WWfn8=
