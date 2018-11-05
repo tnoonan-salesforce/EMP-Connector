@@ -37,6 +37,7 @@ public class BearerTokenExample {
 
             @Override
             public String bearerToken() {
+                System.out.println(String.format("AccessToken: %s", argv[1]));
                 return argv[1];
             }
 

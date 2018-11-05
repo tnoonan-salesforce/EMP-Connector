@@ -3,7 +3,8 @@ jdk: oraclejdk8
 install: true
 script:
 - mvn clean package
-- echo Access Token - $ACCESS_TOKEN
+- echo Access Token - '$ACCEZZ_TOKEN'
+- echo Access Token - $ACCEZZ_TOKEN
 - java -classpath target/emp-connector-0.0.1-SNAPSHOT-phat.jar com.salesforce.emp.connector.example.BearerTokenExample https://su0503.my.salesforce.com '$ACCEZZ_TOKEN' /event/OrgLifecycleNotification
 env:
   global:
